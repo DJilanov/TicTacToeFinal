@@ -1,0 +1,20 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Name="statisticsWindow" x:Class="TicTacToe.Statistics"
+        Title="Statistics" Height="177" Width="489" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid x:Name="statisticsWindow1" >
+
+        <telerik:RadButton Content="Close" HorizontalAlignment="Left" Margin="230,145,0,0" VerticalAlignment="Top" Width="122" Name="statisticsClose" Click="statisticsCloseClick"/>
+        <telerik:RadButton Content="Reset" HorizontalAlignment="Left" Margin="357,145,0,0" VerticalAlignment="Top" Width="122" Name="statisticsReset" Click="statisticsResetClick"/>
+        
+        <Grid HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="469" x:Name="list" IsEnabled="False">
+            <Label Content="Games played :" IsEnabled="False" FontWeight="Bold" FontStyle="Italic" Margin="10,10,362,82"/>
+            <Label Content="Games won :" IsEnabled="False" FontWeight="Bold" FontStyle="Italic" Margin="10,42,362,50"/>
+            <Label Content="Win percentage :" IsEnabled="False" FontWeight="Bold" FontStyle="Italic" Margin="10,74,353,18"/>
+            <Label Margin="112,10,302,82"  Name="gamesPlayed"/>
+            <Label Margin="112,42,282,50"  Name="gamesWon"/>
+            <Label Margin="112,74,262,18"  Name="gamesPercentage"/>
+        </Grid>
+    </Grid>
+</Window>

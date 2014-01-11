@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TicTacToe.EnterSinglePlayer">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAQAAAAAAAAAAAQAAACA=</HashCode>
+      <FileName>EnterPlayerOneName.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.EnterMultyPlayer">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAQAAAAAAAAAAAAAAAAgAAAAACA=</HashCode>
+      <FileName>EnterPlayerTwoName.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.MainWindow">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEiJAAwAgAEARAAsAAAAAAAAQAKAAAIIQAgAgBAAgM=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.StartUpScreen">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAEAACAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StartUpScreen.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.Statistics">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAACAAAAAAAAAAAAAAAAIAAAAAAAQAAAAAABAAAAAA=</HashCode>
+      <FileName>Statistics.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.DataStat.SaveData">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataStat\SaveData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.Events.GameOverEventArgs">
+    <Position X="8.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAAACA=</HashCode>
+      <FileName>Events\GameOverEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.Events.PlayerMovesEventArgs">
+    <Position X="3.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQABAAAAAQAAAAAAAAAAAAAAAAIBAAACA=</HashCode>
+      <FileName>Events\PlayerMovesEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.Exceptions.InvalidMoveException">
+    <Position X="10.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidMoveException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.Exceptions.InvalidNameException">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidNameException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.GameField.Field">
+    <Position X="8.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAgAAACIAAAAAAAAAAAAIAAAAAAAAAABA=</HashCode>
+      <FileName>GameField\Field.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TicTacToe.GameLogic.Configuration">
+    <Position X="6.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>GameLogic\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.GameLogic.Engine">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAQAAAAAAKEAAAQIAwAIAACAACAAAAIAAAAICABEE=</HashCode>
+      <FileName>GameLogic\Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.PlayerInitialize.AIPlayer">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAkAAAAAAIAAAAAAAgAgBIABACAAAAAA=</HashCode>
+      <FileName>PlayerInitialize\AIPlayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TicTacToe.PlayerInitialize.HumanPlayer">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PlayerInitialize\HumanPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.PlayerInitialize.Player">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABgAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PlayerInitialize\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TicTacToe.GameField.Block">
+    <Position X="10.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameField\Block.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="TicTacToe.PlayerInitialize.IThinkfull">
+    <Position X="10.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>PlayerInitialize\IThinkfull.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TicTacToe.PlayerInitialize.TypeOfSign">
+    <Position X="10.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAQCA=</HashCode>
+      <FileName>PlayerInitialize\TypeOfSign.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

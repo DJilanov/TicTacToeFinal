@@ -1,0 +1,78 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        x:Name="mainWindow" x:Class="TicTacToe.MainWindow"
+        Title="Tic Tac Toe" Height="636.629" Width="966.15" WindowStartupLocation="CenterScreen"  WindowStyle="None" Background="DarkCyan" ResizeMode="NoResize" MouseLeftButtonDown="mainWindowMouseLeftButtonDown">
+    <Grid x:Name="GameGrid" Width="540" Height="540" HorizontalAlignment="Left" Margin="10,6,0,8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="71*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="179*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="One" HorizontalAlignment="Left" Height="180"  VerticalAlignment="Top" Width="180" Background="White" Focusable="False" Click="One_Click" Content=" " FontWeight="Bold" FontSize="72" FontStyle="Italic" FontFamily="Tekton Pro Ext"/>
+        <Button x:Name="Three" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="180" Grid.Column="2" Grid.ColumnSpan="2" Background="White" Focusable="False" Content=" " Click="Three_Click" FontFamily="Tekton Pro Ext" FontSize="72" FontWeight="Bold" FontStyle="Italic">
+            <Button.Effect>
+                <DropShadowEffect Color="Gray"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Two" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="180" Grid.Column="1" Background="White" Focusable="False" Content=" " Click="Two_Click_1" FontFamily="Tekton Pro Ext" FontWeight="Bold" FontStyle="Italic" FontSize="72"/>
+        <Button x:Name="Six" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="180" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" Background="White" Focusable="False" Content=" " Click="Six_Click" FontFamily="Tekton Pro Ext" FontSize="72" FontWeight="Bold" FontStyle="Italic">
+            <Button.Effect>
+                <DropShadowEffect Color="Gray"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Five" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="180" Grid.Column="1" Grid.Row="1" Background="White" Focusable="False" Content=" " Click="Five_Click" FontFamily="Tekton Pro Ext" FontSize="72" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="Four" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="180" Grid.Row="1" Background="White" Focusable="False" Content=" " Click="Four_Click" FontFamily="Tekton Pro Ext" FontSize="72" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="Seven" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="180" Grid.Row="2" Grid.RowSpan="2" Background="White" Focusable="False" Content=" " Click="Seven_Click" FontFamily="Tekton Pro Ext" FontSize="72" FontWeight="Bold" FontStyle="Italic">
+            <Button.Effect>
+                <DropShadowEffect Color="Gray"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Eight" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="180" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Background="White" Focusable="False" Content=" " Click="Eight_Click" FontFamily="Tekton Pro Ext" FontSize="72" FontWeight="Bold" FontStyle="Italic">
+            <Button.Effect>
+                <DropShadowEffect Color="Gray"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Nine" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="180" Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="White" Focusable="False" Content=" " Click="Nine_Click" FontFamily="Tekton Pro Ext" FontSize="72" FontWeight="Bold" FontStyle="Italic">
+            <Button.Effect>
+                <DropShadowEffect Color="Gray"/>
+            </Button.Effect>
+        </Button>
+
+        <Label x:Name="playerOneDefaultName" Content="Player One" Grid.Column="3" HorizontalAlignment="Left" Margin="45.761,0,-145,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="playerTwoDefaultName" Content="Player Two" Grid.Column="3" HorizontalAlignment="Left" Margin="45.761,100,-145,0" VerticalAlignment="Top" Width="100"/>
+
+        <TextBox x:Name="textBoxPlayerOnePoints" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="45.761,31,-206,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" IsEnabled="False"/>
+        <TextBox x:Name="textBoxPlayerTwoPoints" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="45.761,126,-206,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" IsEnabled="False"/>
+
+        <Label Content="Points" Grid.Column="3" HorizontalAlignment="Left" Margin="106.761,0,-206,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Points" Grid.Column="3" HorizontalAlignment="Left" Margin="106.761,100,-206,0" VerticalAlignment="Top" Width="100"/>
+
+        <Button x:Name="buttonChangePlayerOneName" Content="Change Name" Grid.Column="3" HorizontalAlignment="Left" Margin="238,32,-347,0" VerticalAlignment="Top" Width="110" Click="buttonChangePlayerOneNameClick"/>
+        <Button x:Name="buttonChangePlayerTwoName" Content="Change Name" Grid.Column="3" HorizontalAlignment="Left" Margin="238,127,-347,0" VerticalAlignment="Top" Width="110" Click="buttonChangePlayerTwoNameClick"/>
+
+        <telerik:RadMenu Margin="-9,-31,-415,0" VerticalAlignment="Top" Grid.ColumnSpan="4" Background="LightGray">
+            <telerik:RadMenuItem Header="Game" Width="57" Height="21" RenderTransformOrigin="0.47,0.426">
+                <telerik:RadMenuItem x:Name="menuNewGame" Header="New Game" Click="menuNewGameClick"/>
+                <telerik:RadMenuItem x:Name="menuStatistics"  Header="Statistics" Click="menuStatisticsClick"/>
+                <telerik:RadMenuItem IsSeparator="True"/>
+                <telerik:RadMenuItem x:Name="menuExit" Header="Exit" Click="menuExitClick"/>
+            </telerik:RadMenuItem>
+        </telerik:RadMenu>
+        <TextBox x:Name="ErrorBox" Grid.Column="3" HorizontalAlignment="Left" Height="80" Margin="46,19,-347,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" IsEnabled="False"/>
+        <StatusBar HorizontalAlignment="Left" Height="27" Margin="-9,164,-415,-49" Grid.Row="3" VerticalAlignment="Top" Width="964" Grid.ColumnSpan="4" Background="LightGray"/>
+        <StatusBar HorizontalAlignment="Left" Height="20" Margin="-9,-49,-415,0" VerticalAlignment="Top" Width="964" Grid.ColumnSpan="4"/>
+        <telerik:RadButton x:Name="radButtonClose" Content="x" Grid.Column="3" HorizontalAlignment="Left" Margin="373,-49,-399,0" VerticalAlignment="Top" Height="20" Width="27" Click="radButtonCloseClick" FontWeight="Bold" Foreground="Black"/>
+        <Label Content="Tic Tac Toe" Grid.Column="2" HorizontalAlignment="Left" Margin="50,-53,0,211" VerticalAlignment="Center" Width="73" Height="22" TextOptions.TextFormattingMode="Display" FontWeight="Bold" FontStyle="Italic" FontFamily="Adobe Arabic" FontSize="16"/>
+    </Grid>
+</Window>

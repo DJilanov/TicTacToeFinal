@@ -1,0 +1,12 @@
+﻿<Window x:Name="enterPlayerOneNameWindow" x:Class="TicTacToe.EnterSinglePlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Enter Player One Name" Height="114" Width="569.954" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Button x:Name="buttonEnterPlayerOneName" Content="Enter Name" HorizontalAlignment="Left" Margin="354,10,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="buttonEnterPlayerOneNameClick" />
+        <Button x:Name="buttonClearPlayerOneName" Content="Clear Name" HorizontalAlignment="Left" Margin="466,10,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="buttonClearPlayerOneNameClick" />
+        <Label x:Name="labelEnterPlayerOneName" Content="Enter Player One Name" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="textBoxPlayerOneName" HorizontalAlignment="Left" Height="26" Margin="160,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+
+    </Grid>
+</Window>
