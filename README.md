@@ -46,7 +46,3 @@ The main reason I created that game was because I will always remember the games
 ## License
 
 Tic Tac Toe is available under the MIT license. See the LICENSE file for more info.
-
-## Special thanks 
-
-Special thanks to Stefo Danchovski for the documentation assistance while creating it!
