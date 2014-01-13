@@ -6,11 +6,11 @@ Standart version of the classic Tic Tac Toe game made on C#.
 
 [![1](Screenshots/1.png)](Screenshots/1.png)
 
-The main reason I created that game was because i will always remember the games i plaid with my friends when i was young. I hope you like it just like me or atleast give it a try
+The main reason I created that game was because I will always remember the games i played with my friends when I was young. I hope you like it just like me or at least give it a try
 
 * Supports almost all of the Windows
 * Just start and go
-* Can be plaid vs other player
+* Can be played vs other player
 * Smart AI
 
 ### Installation
